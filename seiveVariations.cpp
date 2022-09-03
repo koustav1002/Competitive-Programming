@@ -12,6 +12,17 @@ using namespace std;
 const int N=1e5+10;
 vector<bool>isPrime(N,1);
 vll lp(N,0),hp(N,0);
+//ll binExp(ll a,ll b){
+//	ll res=1;
+//	while(b>0){
+//		if(b&1){
+//			res=(res*a);
+//		}
+//		a=(a*a);
+//		b>>=1;
+//	}
+//	return res;
+}//
 int main(){
 	//highest prime and lowest prime
     isPrime[0]=isPrime[1]=false;
@@ -44,7 +55,16 @@ int main(){
 
     // for(int factor:prime_factors) cout<<factor<<" ";
     for(auto factor:prime_factors) cout<<factor.ff<<" "<<factor.ss<<endl;
-	return 0;
+    
+    
+    //ll sumOfFactors=1;
+    //for(auto &factor:prime_factors){
+    //   ll p=factor.ff,n=factor.ss;
+    //   sumOfFactors*=(binExp(p,n+1)-1);
+    //   sumOfFactors/=(p-1);
+    //}
+    //cout<<sumOfFactors<<"\n";
+    return 0;
 }*/
 
 //Divisors
