@@ -14,7 +14,7 @@ ll minPlatform(ll arr[],ll dep[],ll n){
     ll depTime=dep[0];
     ll i=1,j=0;
     while(i<n && j<n){
-        if(arr[i]<=dep[j])
+        if(arr[i]<=depTime)
             plat++,i++;
         else
             plat--,depTime=dep[++j];

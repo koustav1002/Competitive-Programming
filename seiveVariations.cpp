@@ -26,10 +26,10 @@ vll lp(N,0),hp(N,0);
 int main(){
 	//highest prime and lowest prime
     isPrime[0]=isPrime[1]=false;
-    for(int i=0;i<N;i++){
+    for(int i=0;i*i<N;i++){
     	if(isPrime[i]){
     		hp[i]=lp[i]=i;
-    		for(int j=2*i;j<N;j+=i){
+    		for(int j=i*i;j<N;j+=i){
     			isPrime[j]=false;
     			hp[j]=i;
     			if(lp[j]==0){
